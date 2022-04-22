@@ -2,7 +2,7 @@
 
 set -eu
 
-echo "::group::eslint-changed-files"
+echo "::group::eslint-changed-files-LUK45"
 
 git config --global --add safe.directory /github/workspace
 
@@ -19,6 +19,7 @@ CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 
+git config --global --add safe.directory /github/workspace
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
