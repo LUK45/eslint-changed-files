@@ -86,3 +86,5 @@ else
       exit 0;
   fi
 fi
+
+git config --global --add safe.directory /github/workspace
